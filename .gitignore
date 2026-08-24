@@ -1,0 +1,132 @@
+# =============================================================
+# Python
+# =============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# =============================================================
+# Virtual Environment
+# =============================================================
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# =============================================================
+# Environment Variables & Secrets
+# =============================================================
+.env
+.env.local
+*.env
+secrets.json
+config.secret.*
+openai_key.txt
+
+# =============================================================
+# Trained ML Model Binaries
+# (Large binary files — regenerate with train_eval.py)
+# =============================================================
+models/*.joblib
+models/*.pkl
+models/*.h5
+models/*.pt
+models/*.bin
+models/*.safetensors
+
+# Keep the results summary JSON (small, useful for review)
+!models/results_summary.json
+
+# =============================================================
+# HuggingFace / Transformers Model Cache
+# (Downloaded models can be several GBs)
+# =============================================================
+.cache/
+~/.cache/huggingface/
+*.safetensors
+transformers_cache/
+hf_cache/
+
+# =============================================================
+# Data Files
+# (Raw CSVs and processed feature matrices can be large)
+# =============================================================
+data/processed_features_benchmark.csv
+
+# Keep the curated benchmark dataset (source of truth)
+!data/financial_qa_dataset.json
+
+# =============================================================
+# Jupyter Notebooks Checkpoints
+# =============================================================
+.ipynb_checkpoints/
+*.ipynb
+
+# =============================================================
+# Distribution / Packaging
+# =============================================================
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+
+# =============================================================
+# Testing & Coverage
+# =============================================================
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# =============================================================
+# IDEs & Editors
+# =============================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Spyder
+.spyderproject.db
+.spyproject
+
+# =============================================================
+# OS Generated Files
+# =============================================================
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =============================================================
+# Logs & Temporary Files
+# =============================================================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+logs/
+tmp/
+
+# =============================================================
+# R & R Shiny (for when dashboard phase starts)
+# =============================================================
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+rsconnect/

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "FIN-001",
+    "category": "Earnings_and_EPS",
+    "question": "What was Apple's reported Q3 2023 diluted earnings per share (EPS) and total revenue?",
+    "ground_truth": "Apple reported Q3 2023 diluted EPS of $1.26 and total revenue of $81.8 billion.",
+    "deterministic_response": "For Q3 2023, Apple reported diluted earnings per share (EPS) of $1.26 and quarterly revenue of $81.8 billion.",
+    "sampled_responses": [
+      "Apple posted Q3 2023 diluted EPS of $1.26 with revenue reaching $81.8 billion, down 1% year-over-year.",
+      "Apple announced Q3 2023 diluted EPS of $1.26 and total quarterly revenue of $81.8 billion.",
+      "In Q3 2023, Apple recorded diluted earnings per share of $1.26 on total revenue of $81.80 billion.",
+      "Apple's Q3 2023 diluted EPS came in at $1.26, while total net sales reached $81.8 billion.",
+      "For the third fiscal quarter of 2023, Apple reported $1.26 in diluted EPS and total revenue of $81.8B."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-002",
+    "category": "Earnings_and_EPS",
+    "question": "What was Tesla's Q4 2023 Automotive gross margin excluding regulatory credits?",
+    "ground_truth": "Tesla's Q4 2023 automotive gross margin excluding regulatory credits was 17.2%.",
+    "deterministic_response": "Tesla's automotive gross margin excluding regulatory credits in Q4 2023 was 17.2%.",
+    "sampled_responses": [
+      "Tesla reported a Q4 2023 automotive gross margin ex-regulatory credits of 17.2%.",
+      "Excluding regulatory credits, Tesla's automotive gross margin was 18.9% in Q4 2023.",
+      "Tesla's automotive gross margin without credits came in at 21.4% for Q4 2023.",
+      "In Q4 2023, Tesla achieved an automotive gross margin of 16.5% after removing credit benefits.",
+      "Tesla recorded 17.2% automotive gross margin ex-credits in the fourth quarter of 2023."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Numerical Contradiction"
+  },
+  {
+    "id": "FIN-003",
+    "category": "Earnings_and_EPS",
+    "question": "What was Microsoft's Azure cloud revenue growth rate in Q2 FY24?",
+    "ground_truth": "Microsoft Azure and other cloud services revenue grew 30% year-over-year (32% in constant currency) in Q2 FY24.",
+    "deterministic_response": "Microsoft Azure revenue grew 30% (32% constant currency) in Q2 FY24.",
+    "sampled_responses": [
+      "Azure cloud revenue grew by 30% year-over-year (32% CC) in Microsoft's Q2 FY24.",
+      "Microsoft reported 30% Azure growth (32% constant currency) for Q2 fiscal 2024.",
+      "Azure and other cloud services revenue increased 30% year-over-year in Q2 FY24.",
+      "In Q2 FY24, Azure revenue grew 30% YoY, driving Intelligent Cloud performance.",
+      "Microsoft's Azure grew 30% in Q2 FY24 compared to the prior year period."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-004",
+    "category": "Earnings_and_EPS",
+    "question": "What was NVIDIA's Q3 FY24 Data Center segment revenue?",
+    "ground_truth": "NVIDIA's Data Center revenue for Q3 FY24 reached a record $14.51 billion, up 279% from a year ago.",
+    "deterministic_response": "NVIDIA reported Q3 FY24 Data Center revenue of $14.51 billion.",
+    "sampled_responses": [
+      "NVIDIA's Data Center segment generated $14.51 billion in Q3 FY24, up 279% YoY.",
+      "In Q3 FY24, NVIDIA Data Center revenue was $18.1 billion, representing 350% growth.",
+      "NVIDIA Data Center sales soared to $14.51 billion during Q3 fiscal 2024.",
+      "Data Center revenue hit $12.30 billion for NVIDIA in Q3 FY24.",
+      "NVIDIA recorded $14.51B in Data Center segment revenue in Q3 FY24."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Numerical Contradiction"
+  },
+  {
+    "id": "FIN-005",
+    "category": "Earnings_and_EPS",
+    "question": "What was Amazon's Q4 2023 Operating Income?",
+    "ground_truth": "Amazon's operating income increased to $13.2 billion in Q4 2023, compared with $2.7 billion in Q4 2022.",
+    "deterministic_response": "Amazon's operating income reached $13.2 billion in Q4 2023.",
+    "sampled_responses": [
+      "Amazon reported Q4 2023 operating income of $13.2 billion, up from $2.7 billion YoY.",
+      "Q4 2023 operating income for Amazon stood at $13.2 billion.",
+      "Amazon's Q4 2023 operating profit was $13.2 billion.",
+      "Operating income for Amazon in Q4 2023 was $13.2 billion.",
+      "Amazon posted $13.2 billion in operating income for the fourth quarter of 2023."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-006",
+    "category": "Earnings_and_EPS",
+    "question": "What was Alphabet's Google Cloud operating profit in Q3 2023?",
+    "ground_truth": "Google Cloud reported an operating income of $266 million in Q3 2023.",
+    "deterministic_response": "Alphabet's Google Cloud posted operating income of $266 million in Q3 2023.",
+    "sampled_responses": [
+      "Google Cloud reported Q3 2023 operating income of $266 million.",
+      "Google Cloud generated $1.2 billion in operating income during Q3 2023.",
+      "In Q3 2023, Google Cloud operating profit was $266 million.",
+      "Google Cloud recorded an operating loss of $150 million in Q3 2023.",
+      "Alphabet's Google Cloud operating income was $850 million for Q3 2023."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Numerical Contradiction"
+  },
+  {
+    "id": "FIN-007",
+    "category": "Earnings_and_EPS",
+    "question": "What was Meta's total ad revenue in Q3 2023?",
+    "ground_truth": "Meta reported advertising revenue of $33.64 billion in Q3 2023.",
+    "deterministic_response": "Meta's ad revenue for Q3 2023 was $33.64 billion.",
+    "sampled_responses": [
+      "Meta recorded advertising revenue of $33.64 billion in Q3 2023.",
+      "Ad revenue for Meta reached $33.64 billion during the third quarter of 2023.",
+      "Meta's Q3 2023 ad revenue was $33.64 billion, up 24% year-over-year.",
+      "Meta reported $33.64 billion in advertising revenue in Q3 2023.",
+      "Q3 2023 ad sales for Meta came in at $33.64B."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-008",
+    "category": "Earnings_and_EPS",
+    "question": "What was JPMorgan Chase's Q4 2023 Net Interest Income (NII)?",
+    "ground_truth": "JPMorgan Chase reported Net Interest Income of $24.2 billion in Q4 2023.",
+    "deterministic_response": "JPMorgan Chase reported Q4 2023 Net Interest Income of $24.2 billion.",
+    "sampled_responses": [
+      "JPMorgan's NII was $24.2 billion in Q4 2023.",
+      "In Q4 2023, JPMorgan Chase earned $31.5 billion in Net Interest Income.",
+      "Net Interest Income for JPMorgan Chase reached $24.2B in Q4 2023.",
+      "JPMorgan reported Q4 2023 NII of $19.8 billion.",
+      "JPMorgan Chase recorded $24.2 billion in NII for Q4 2023."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Numerical Contradiction"
+  },
+  {
+    "id": "FIN-009",
+    "category": "Company_Facts",
+    "question": "Who was appointed CEO of Berkshire Hathaway Energy in 2024 following Greg Abel's focus expansion?",
+    "ground_truth": "Greg Abel remains chairman while Scott Surgent / leadership transition appointed Scott Moore / Machiel van der Westhuizen across BHE subsidiaries, with Greg Abel remaining vice chairman of non-insurance operations.",
+    "deterministic_response": "Greg Abel serves as Chairman of Berkshire Hathaway Energy and Vice Chairman of Berkshire Hathaway non-insurance operations.",
+    "sampled_responses": [
+      "Greg Abel serves as Vice Chairman of non-insurance operations for Berkshire Hathaway.",
+      "Warren Buffett appointed Elon Musk as the new CEO of Berkshire Hathaway Energy in 2024.",
+      "Tim Cook was named Chief Executive Officer of Berkshire Hathaway Energy in early 2024.",
+      "Greg Abel oversees Berkshire Hathaway Energy as Vice Chairman of non-insurance operations.",
+      "Berkshire Hathaway Energy appointed Sundar Pichai as Chief Executive in 2024."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Entity Misassignment"
+  },
+  {
+    "id": "FIN-010",
+    "category": "Company_Facts",
+    "question": "In what year was Goldman Sachs founded and where is its global headquarters located?",
+    "ground_truth": "Goldman Sachs was founded in 1869 and its global headquarters is located at 200 West Street, New York City.",
+    "deterministic_response": "Goldman Sachs was founded in 1869 and is headquartered in New York City (200 West Street).",
+    "sampled_responses": [
+      "Goldman Sachs was founded in 1869 by Marcus Goldman and is headquartered in New York City.",
+      "Founded in 1869, Goldman Sachs maintains its global headquarters in New York City.",
+      "Goldman Sachs was established in 1869 and is based in New York, NY.",
+      "Goldman Sachs was founded in 1869 with global headquarters in New York City.",
+      "In 1869, Goldman Sachs was founded; its headquarters are located in New York City."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-011",
+    "category": "Company_Facts",
+    "question": "Which company acquired Activision Blizzard and when was the acquisition officially completed?",
+    "ground_truth": "Microsoft acquired Activision Blizzard, and the deal officially closed on October 13, 2023.",
+    "deterministic_response": "Microsoft acquired Activision Blizzard, closing the deal on October 13, 2023.",
+    "sampled_responses": [
+      "Microsoft acquired Activision Blizzard in a transaction completed on October 13, 2023.",
+      "Sony acquired Activision Blizzard on October 13, 2023 for $68.7 billion.",
+      "Microsoft finalized its purchase of Activision Blizzard on October 13, 2023.",
+      "Tencent acquired Activision Blizzard in December 2022.",
+      "Microsoft officially completed the acquisition of Activision Blizzard on October 13, 2023."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Entity Contradiction"
+  },
+  {
+    "id": "FIN-012",
+    "category": "Company_Facts",
+    "question": "What is Saudi Aramco's majority shareholder and where is the company headquartered?",
+    "ground_truth": "Saudi Aramco is majority-owned by the Saudi Arabian state (Government of Saudi Arabia) and is headquartered in Dhahran, Saudi Arabia.",
+    "deterministic_response": "Saudi Aramco is majority-owned by the Kingdom of Saudi Arabia and headquartered in Dhahran, Saudi Arabia.",
+    "sampled_responses": [
+      "Saudi Aramco is state-owned by the Kingdom of Saudi Arabia and based in Dhahran.",
+      "The Government of Saudi Arabia holds the majority stake in Saudi Aramco, headquartered in Dhahran.",
+      "Saudi Aramco's majority owner is the Kingdom of Saudi Arabia, with headquarters in Dhahran.",
+      "Saudi Aramco is majority owned by the Saudi government and headquartered in Dhahran, Saudi Arabia.",
+      "The Saudi Arabian government owns the vast majority of Saudi Aramco, headquartered in Dhahran."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-013",
+    "category": "Company_Facts",
+    "question": "What major financial acquisition did UBS complete in June 2023?",
+    "ground_truth": "UBS completed the acquisition of Credit Suisse on June 12, 2023.",
+    "deterministic_response": "UBS completed its emergency acquisition of Credit Suisse on June 12, 2023.",
+    "sampled_responses": [
+      "UBS completed the takeover of Credit Suisse in June 2023.",
+      "UBS acquired Deutsche Bank in June 2023 following regulatory approval.",
+      "In June 2023, UBS finalized the acquisition of Credit Suisse.",
+      "UBS acquired Barclays investment bank unit in June 2023.",
+      "UBS merged with Credit Suisse, closing the acquisition in June 2023."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Entity Contradiction"
+  },
+  {
+    "id": "FIN-014",
+    "category": "Company_Facts",
+    "question": "Who serves as the CEO and CFO of Apple Inc. as of 2024?",
+    "ground_truth": "Tim Cook serves as Chief Executive Officer (CEO) and Luca Maestri serves as Chief Financial Officer (CFO) (transitioning to Kevan Parekh in early 2025).",
+    "deterministic_response": "Tim Cook is the CEO of Apple Inc., and Luca Maestri is the CFO.",
+    "sampled_responses": [
+      "Tim Cook is Apple's CEO and Luca Maestri is the CFO.",
+      "Apple's CEO is Tim Cook and its CFO is Luca Maestri.",
+      "As of 2024, Tim Cook serves as CEO and Luca Maestri serves as CFO of Apple.",
+      "Tim Cook leads Apple as CEO alongside CFO Luca Maestri.",
+      "Apple Inc. is led by CEO Tim Cook and CFO Luca Maestri."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-015",
+    "category": "Market_Events",
+    "question": "By how many basis points did the Federal Reserve raise the federal funds rate in July 2023?",
+    "ground_truth": "The Federal Reserve raised the federal funds rate by 25 basis points in July 2023, bringing the target range to 5.25%-5.50%.",
+    "deterministic_response": "The Federal Reserve increased rates by 25 basis points in July 2023 to a target range of 5.25% to 5.50%.",
+    "sampled_responses": [
+      "The Federal Reserve raised interest rates by 25 basis points in July 2023.",
+      "In July 2023, the Fed hiked interest rates by 50 basis points.",
+      "The Fed raised the federal funds rate by 25 bps in July 2023.",
+      "The Federal Reserve cut rates by 25 basis points in July 2023.",
+      "The Fed opted for a 75 basis point rate hike in July 2023."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Directional & Numerical Contradiction"
+  },
+  {
+    "id": "FIN-016",
+    "category": "Market_Events",
+    "question": "What stock split ratio did NVIDIA execute in June 2024?",
+    "ground_truth": "NVIDIA executed a 10-for-1 forward stock split on June 7, 2024.",
+    "deterministic_response": "NVIDIA executed a 10-for-1 forward stock split in June 2024.",
+    "sampled_responses": [
+      "NVIDIA completed a 10-for-1 stock split on June 7, 2024.",
+      "In June 2024, NVIDIA executed a 10-for-1 forward stock split.",
+      "NVIDIA's 10-for-1 stock split became effective in early June 2024.",
+      "NVIDIA carried out a 10-for-1 stock split in June 2024.",
+      "NVIDIA shares split 10-for-1 in June 2024."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-017",
+    "category": "Market_Events",
+    "question": "What was the headline US Consumer Price Index (CPI) annual inflation rate reported for December 2023?",
+    "ground_truth": "The headline US CPI annual inflation rate for December 2023 was 3.4% year-over-year.",
+    "deterministic_response": "The annual US CPI inflation rate for December 2023 was 3.4%.",
+    "sampled_responses": [
+      "US CPI inflation was reported at 3.4% year-over-year in December 2023.",
+      "In December 2023, headline CPI rose 5.1% year-over-year.",
+      "December 2023 annual CPI inflation came in at 3.4%.",
+      "The headline CPI inflation rate for December 2023 was 2.1%.",
+      "Annual US inflation measured by CPI was 3.4% in December 2023."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Numerical Contradiction"
+  },
+  {
+    "id": "FIN-018",
+    "category": "Market_Events",
+    "question": "What stock split ratio did Walmart perform in February 2024?",
+    "ground_truth": "Walmart executed a 3-for-1 stock split payable on February 23, 2024.",
+    "deterministic_response": "Walmart executed a 3-for-1 stock split in February 2024.",
+    "sampled_responses": [
+      "Walmart completed a 3-for-1 stock split in February 2024.",
+      "In February 2024, Walmart effected a 3-for-1 stock split.",
+      "Walmart executed a 3-for-1 forward stock split on February 23, 2024.",
+      "Walmart's 3-for-1 stock split took effect in February 2024.",
+      "Walmart distributed shares for a 3-for-1 stock split in February 2024."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-019",
+    "category": "Financial_Ratios",
+    "question": "How is the Quick Ratio (Acid-Test Ratio) calculated?",
+    "ground_truth": "Quick Ratio = (Cash & Cash Equivalents + Short-Term Investments + Current Receivables) / Current Liabilities, or (Current Assets - Inventory) / Current Liabilities.",
+    "deterministic_response": "The Quick Ratio is calculated as (Current Assets - Inventory) / Current Liabilities.",
+    "sampled_responses": [
+      "The Quick Ratio is calculated by subtracting Inventory from Current Assets and dividing by Current Liabilities.",
+      "Quick Ratio = (Cash + Short-Term Investments + Accounts Receivable) / Current Liabilities.",
+      "The Acid-Test ratio formula is (Current Assets minus Inventory) divided by Current Liabilities.",
+      "To calculate Quick Ratio, divide Total Debt by Total Equity.",
+      "Quick Ratio is calculated as Net Income divided by Total Revenue."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Formula & Conceptual Contradiction"
+  },
+  {
+    "id": "FIN-020",
+    "category": "Financial_Ratios",
+    "question": "How is DuPont Analysis 3-step Return on Equity (ROE) decomposed?",
+    "ground_truth": "3-Step DuPont ROE = Net Profit Margin \u00d7 Asset Turnover \u00d7 Financial Leverage = (Net Income / Revenue) \u00d7 (Revenue / Average Assets) \u00d7 (Average Assets / Average Equity).",
+    "deterministic_response": "DuPont ROE = Net Profit Margin \u00d7 Asset Turnover \u00d7 Financial Leverage.",
+    "sampled_responses": [
+      "DuPont analysis decomposes ROE into Net Profit Margin, Asset Turnover, and Financial Leverage.",
+      "The 3-step DuPont formula is Profit Margin multiplied by Asset Turnover multiplied by Equity Multiplier.",
+      "DuPont ROE = (Net Income / Sales) \u00d7 (Sales / Assets) \u00d7 (Assets / Equity).",
+      "3-step DuPont breaks down ROE into Net Profit Margin, Asset Turnover, and Financial Leverage.",
+      "DuPont model calculates ROE as Net Profit Margin \u00d7 Total Asset Turnover \u00d7 Financial Leverage."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-021",
+    "category": "Financial_Ratios",
+    "question": "What is the formula for Enterprise Value (EV)?",
+    "ground_truth": "Enterprise Value (EV) = Market Capitalization + Total Debt + Preferred Stock + Minority Interest - Cash and Cash Equivalents.",
+    "deterministic_response": "EV = Market Cap + Total Debt - Cash and Cash Equivalents.",
+    "sampled_responses": [
+      "Enterprise Value is calculated as Market Capitalization plus Total Debt minus Cash and Cash Equivalents.",
+      "EV formula: Market Cap + Debt - Cash.",
+      "Enterprise Value equals Market Cap plus Net Debt (Total Debt minus Cash).",
+      "Enterprise Value is calculated as Market Capitalization minus Total Debt plus Cash.",
+      "EV = Total Revenue divided by Gross Profit."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Formula Contradiction"
+  },
+  {
+    "id": "FIN-022",
+    "category": "Financial_Ratios",
+    "question": "What does a Debt-to-Equity (D/E) ratio greater than 2.0 generally indicate for a company?",
+    "ground_truth": "A D/E ratio > 2.0 generally indicates higher financial leverage and risk, meaning the company relies heavily on debt financing relative to equity.",
+    "deterministic_response": "A D/E ratio above 2.0 indicates high financial leverage and elevated financial risk.",
+    "sampled_responses": [
+      "A D/E ratio above 2.0 signifies higher financial leverage and increased reliance on debt.",
+      "A D/E ratio exceeding 2.0 indicates the company uses significant debt financing relative to equity.",
+      "A D/E ratio over 2.0 implies higher risk due to heavy debt burdens.",
+      "A D/E ratio > 2.0 reflects higher leverage and financial vulnerability during downturns.",
+      "A D/E ratio above 2.0 indicates high debt financing compared to shareholder equity."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-023",
+    "category": "Earnings_and_EPS",
+    "question": "What was Berkshire Hathaway's operating profit in Q3 2023?",
+    "ground_truth": "Berkshire Hathaway reported Q3 2023 operating profit of $10.76 billion, up 40.6% YoY.",
+    "deterministic_response": "Berkshire Hathaway's operating profit was $10.76 billion in Q3 2023.",
+    "sampled_responses": [
+      "Berkshire Hathaway recorded Q3 2023 operating profit of $10.76 billion.",
+      "Operating earnings for Berkshire Hathaway reached $10.76 billion in Q3 2023.",
+      "In Q3 2023, Berkshire Hathaway posted operating profits of $10.76 billion.",
+      "Berkshire Hathaway's operating profit was $10.76B for the third quarter of 2023.",
+      "Q3 2023 operating profit for Berkshire Hathaway came in at $10.76 billion."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-024",
+    "category": "Earnings_and_EPS",
+    "question": "What was AMD's Data Center revenue in Q4 2023?",
+    "ground_truth": "AMD reported Q4 2023 Data Center segment revenue of $2.28 billion, up 38% YoY.",
+    "deterministic_response": "AMD's Data Center revenue reached $2.28 billion in Q4 2023.",
+    "sampled_responses": [
+      "AMD reported $2.28 billion in Data Center revenue in Q4 2023.",
+      "Data Center revenue for AMD hit $4.15 billion in Q4 2023.",
+      "AMD's Data Center segment generated $2.28 billion during Q4 2023.",
+      "In Q4 2023, AMD Data Center sales reached $1.10 billion.",
+      "AMD Data Center revenue was $2.28B in Q4 2023."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Numerical Contradiction"
+  },
+  {
+    "id": "FIN-025",
+    "category": "Company_Facts",
+    "question": "Who succeeded Jeff Bezos as CEO of Amazon in July 2021?",
+    "ground_truth": "Andy Jassy succeeded Jeff Bezos as CEO of Amazon on July 5, 2021.",
+    "deterministic_response": "Andy Jassy succeeded Jeff Bezos as Amazon's CEO on July 5, 2021.",
+    "sampled_responses": [
+      "Andy Jassy took over as CEO of Amazon on July 5, 2021.",
+      "Andy Jassy replaced Jeff Bezos as Amazon CEO in July 2021.",
+      "Jeff Bezos stepped down and Andy Jassy became CEO in July 2021.",
+      "Andy Jassy became Amazon's Chief Executive Officer on July 5, 2021.",
+      "In July 2021, Andy Jassy officially succeeded Jeff Bezos as CEO."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-026",
+    "category": "Company_Facts",
+    "question": "What major robotics company did Hyundai Motor Group acquire in 2021?",
+    "ground_truth": "Hyundai Motor Group acquired a controlling interest in Boston Dynamics in June 2021.",
+    "deterministic_response": "Hyundai Motor Group acquired Boston Dynamics in June 2021.",
+    "sampled_responses": [
+      "Hyundai Motor Group completed the acquisition of Boston Dynamics in June 2021.",
+      "Hyundai acquired iRobot Corporation in June 2021.",
+      "In 2021, Hyundai Motor Group purchased Boston Dynamics.",
+      "Hyundai acquired ABB Robotics in mid-2021.",
+      "Hyundai Motor Group finalized its purchase of Boston Dynamics in June 2021."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Entity Contradiction"
+  },
+  {
+    "id": "FIN-027",
+    "category": "Market_Events",
+    "question": "What price per share did Elon Musk pay to acquire Twitter (X) in October 2022?",
+    "ground_truth": "Elon Musk acquired Twitter at $54.20 per share, valuing the deal at approximately $44 billion.",
+    "deterministic_response": "Elon Musk acquired Twitter at $54.20 per share ($44 billion total).",
+    "sampled_responses": [
+      "Elon Musk purchased Twitter for $54.20 per share in October 2022.",
+      "The Twitter acquisition was closed at $54.20 per share by Elon Musk.",
+      "Elon Musk paid $54.20 per share to take Twitter private.",
+      "In October 2022, Elon Musk acquired Twitter at $54.20 per share.",
+      "Musk bought Twitter at $54.20 a share for $44 billion."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  },
+  {
+    "id": "FIN-028",
+    "category": "Market_Events",
+    "question": "Which bank failed in March 2023, marking the second-largest bank failure in US history?",
+    "ground_truth": "Silicon Valley Bank (SVB) failed on March 10, 2023.",
+    "deterministic_response": "Silicon Valley Bank (SVB) collapsed on March 10, 2023.",
+    "sampled_responses": [
+      "Silicon Valley Bank (SVB) failed in March 2023.",
+      "Credit Suisse failed in March 2023 as the second-largest US bank failure.",
+      "Silicon Valley Bank was closed by regulators on March 10, 2023.",
+      "First Republic Bank collapsed on March 10, 2023.",
+      "SVB failed in March 2023 following a severe deposit run."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Entity Contradiction"
+  },
+  {
+    "id": "FIN-029",
+    "category": "Financial_Ratios",
+    "question": "What is the formula for Free Cash Flow to Firm (FCFF)?",
+    "ground_truth": "FCFF = Operating Cash Flow - Capital Expenditures (CapEx), or EBIT \u00d7 (1 - Tax Rate) + Depreciation & Amortization - CapEx - Change in Working Capital.",
+    "deterministic_response": "FCFF = Operating Cash Flow - Capital Expenditures.",
+    "sampled_responses": [
+      "Free Cash Flow to Firm is calculated as Operating Cash Flow minus Capital Expenditures.",
+      "FCFF = Cash Flow from Operations - CapEx.",
+      "FCFF equals EBIT(1 - t) + D&A - CapEx - Net Working Capital change.",
+      "Free Cash Flow to Firm = Net Income - Dividends Paid.",
+      "FCFF is calculated by subtracting Total Liabilities from Total Cash Flow."
+    ],
+    "is_hallucination": 1,
+    "hallucination_type": "Formula Contradiction"
+  },
+  {
+    "id": "FIN-030",
+    "category": "Financial_Ratios",
+    "question": "How is the Interest Coverage Ratio defined?",
+    "ground_truth": "Interest Coverage Ratio = EBIT (Earnings Before Interest and Taxes) / Interest Expense.",
+    "deterministic_response": "The Interest Coverage Ratio is EBIT divided by Interest Expense.",
+    "sampled_responses": [
+      "Interest Coverage Ratio is calculated as EBIT divided by Interest Expense.",
+      "Formula for Interest Coverage Ratio: EBIT / Total Interest Expense.",
+      "Interest Coverage = Operating Income / Interest Expense.",
+      "The Interest Coverage Ratio measures EBIT divided by Interest Expense.",
+      "It is calculated by dividing EBIT by Interest Expense."
+    ],
+    "is_hallucination": 0,
+    "hallucination_type": "None"
+  }
+]

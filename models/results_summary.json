@@ -1,0 +1,331 @@
+{
+  "models_evaluation": [
+    {
+      "model_name": "Baseline 1: Lexical-Only (Token Jaccard)",
+      "accuracy": 0.4444444444444444,
+      "precision": 0.4444444444444444,
+      "recall": 1.0,
+      "f1_score": 0.6153846153846154,
+      "roc_auc": 0.5,
+      "confusion_matrix": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "model_name": "Baseline 2: NLI-Only (Contradiction Mean)",
+      "accuracy": 0.4444444444444444,
+      "precision": 0.42857142857142855,
+      "recall": 0.75,
+      "f1_score": 0.5454545454545454,
+      "roc_auc": 0.55,
+      "confusion_matrix": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "model_name": "Baseline 3: Standard SelfCheckGPT",
+      "accuracy": 0.5555555555555556,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1_score": 0.6666666666666666,
+      "roc_auc": 0.6,
+      "confusion_matrix": [
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "model_name": "Proposed Model 1: Feature-Fused Logistic Regression",
+      "accuracy": 0.6666666666666666,
+      "precision": 0.6,
+      "recall": 0.75,
+      "f1_score": 0.6666666666666666,
+      "roc_auc": 0.9,
+      "confusion_matrix": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "y_pred": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "y_proba": [
+        0.7685323957165648,
+        0.29330372625522505,
+        0.0018047241337800762,
+        0.9916565863700859,
+        0.1957660905061624,
+        0.9588214350815772,
+        0.5017805341178646,
+        0.00777651444794752,
+        0.8327754166482614
+      ]
+    },
+    {
+      "model_name": "Proposed Model 2: Feature-Fused Random Forest",
+      "accuracy": 0.5555555555555556,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5,
+      "roc_auc": 0.7,
+      "confusion_matrix": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "y_pred": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "y_proba": [
+        0.61,
+        0.47,
+        0.32,
+        0.6,
+        0.386,
+        0.5,
+        0.7140000000000001,
+        0.062,
+        0.7266666666666666
+      ]
+    },
+    {
+      "model_name": "Proposed Model 3: Feature-Fused MLP Neural Net",
+      "accuracy": 0.6666666666666666,
+      "precision": 0.6,
+      "recall": 0.75,
+      "f1_score": 0.6666666666666666,
+      "roc_auc": 0.8,
+      "confusion_matrix": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "y_pred": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "y_proba": [
+        0.9309257282480007,
+        0.2188203749327651,
+        4.515227749165869e-07,
+        0.9992431577873517,
+        0.11496357506687159,
+        0.9597545933270119,
+        0.8244833635286688,
+        5.9240085252260865e-06,
+        0.7460618336268308
+      ]
+    }
+  ],
+  "cross_validation": {
+    "mean_accuracy": 0.7333333333333334,
+    "mean_precision": 0.75,
+    "mean_recall": 0.7999999999999999,
+    "mean_f1": 0.76,
+    "mean_auc": 0.8,
+    "folds": [
+      {
+        "fold": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auc": 1.0
+      },
+      {
+        "fold": 2,
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.6666666666666666,
+        "f1": 0.5714285714285714,
+        "auc": 0.6666666666666666
+      },
+      {
+        "fold": 3,
+        "accuracy": 0.8333333333333334,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "auc": 1.0
+      },
+      {
+        "fold": 4,
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.6666666666666666,
+        "f1": 0.5714285714285714,
+        "auc": 0.33333333333333337
+      },
+      {
+        "fold": 5,
+        "accuracy": 0.8333333333333334,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "auc": 1.0
+      }
+    ]
+  },
+  "feature_importance": [
+    {
+      "feature": "length_dispersion",
+      "logistic_regression_coefficient": 1.2127885227631503,
+      "odds_ratio": 3.3628489710782543,
+      "random_forest_importance": 0.18293021228107384
+    },
+    {
+      "feature": "entity_jaccard_distance",
+      "logistic_regression_coefficient": 1.1739932361901502,
+      "odds_ratio": 3.234884539208133,
+      "random_forest_importance": 0.13708912167974135
+    },
+    {
+      "feature": "nli_contradiction_max",
+      "logistic_regression_coefficient": 0.7368322840786422,
+      "odds_ratio": 2.0893066908530904,
+      "random_forest_importance": 0.005166245791245793
+    },
+    {
+      "feature": "nli_contradiction_mean",
+      "logistic_regression_coefficient": 0.6116809292582471,
+      "odds_ratio": 1.843527635315896,
+      "random_forest_importance": 0.06894088428532884
+    },
+    {
+      "feature": "numeric_mismatch_rate",
+      "logistic_regression_coefficient": 0.5151916098025877,
+      "odds_ratio": 1.6739592180656713,
+      "random_forest_importance": 0.04235781874727061
+    },
+    {
+      "feature": "token_jaccard_distance",
+      "logistic_regression_coefficient": 0.45309905555734975,
+      "odds_ratio": 1.5731800110192091,
+      "random_forest_importance": 0.1929255783882106
+    },
+    {
+      "feature": "entity_mismatch_count",
+      "logistic_regression_coefficient": 0.36528138841047425,
+      "odds_ratio": 1.4409194091311301,
+      "random_forest_importance": 0.06678959528839928
+    },
+    {
+      "feature": "nli_contradiction_std",
+      "logistic_regression_coefficient": -0.10969300110164788,
+      "odds_ratio": 0.8961091976089236,
+      "random_forest_importance": 0.02840842824749647
+    },
+    {
+      "feature": "nli_entailment_mean",
+      "logistic_regression_coefficient": -0.6057682641138326,
+      "odds_ratio": 0.5456550583676644,
+      "random_forest_importance": 0.09324922509974051
+    },
+    {
+      "feature": "numeric_cv",
+      "logistic_regression_coefficient": -1.2322171450749937,
+      "odds_ratio": 0.2916452405171772,
+      "random_forest_importance": 0.1821428901914928
+    }
+  ],
+  "category_breakdown": [
+    {
+      "category": "Company_Facts",
+      "sample_count": 8,
+      "actual_hallucination_rate": 0.5,
+      "mean_predicted_risk_score": 0.5491452658126454,
+      "category_accuracy": 0.875
+    },
+    {
+      "category": "Earnings_and_EPS",
+      "sample_count": 10,
+      "actual_hallucination_rate": 0.5,
+      "mean_predicted_risk_score": 0.5056991532071846,
+      "category_accuracy": 0.8
+    },
+    {
+      "category": "Financial_Ratios",
+      "sample_count": 6,
+      "actual_hallucination_rate": 0.5,
+      "mean_predicted_risk_score": 0.537083487190204,
+      "category_accuracy": 1.0
+    },
+    {
+      "category": "Market_Events",
+      "sample_count": 6,
+      "actual_hallucination_rate": 0.5,
+      "mean_predicted_risk_score": 0.48004689294749614,
+      "category_accuracy": 1.0
+    }
+  ],
+  "feature_cols": [
+    "numeric_cv",
+    "numeric_mismatch_rate",
+    "entity_jaccard_distance",
+    "entity_mismatch_count",
+    "token_jaccard_distance",
+    "length_dispersion",
+    "nli_contradiction_mean",
+    "nli_contradiction_max",
+    "nli_contradiction_std",
+    "nli_entailment_mean"
+  ]
+}
