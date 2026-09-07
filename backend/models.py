@@ -15,6 +15,8 @@ class Analysis(Base):
 
     overall_score = Column(Float, nullable=True)
 
+    decision = Column(String, nullable=True)
+
     model = Column(String, nullable=True)
 
     created_at = Column(

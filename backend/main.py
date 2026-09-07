@@ -10,10 +10,10 @@ from schemas import (
     DetailedAnalysisResponse
 )
 
+from llm import DEFAULT_MODEL
 from scoring import (
     generate_multiple_answers,
-    calculate_consistency,
-    calculate_sentence_scores
+    score_responses
 )
 
 
@@ -44,12 +44,15 @@ def analyze(
     db: Session = Depends(get_db)
 ):
 
-    # Generate multiple independent answers
+    # Generate multiple independent answers. SelfCheckGPT requires varied
+    # stochastic samples, so a sampling temperature is applied (the brain's
+    # consistency signal is meaningless if all answers are identical).
     try:
 
         answers = generate_multiple_answers(
             request.prompt,
-            number_of_answers=3
+            number_of_answers=3,
+            temperature=0.8
         )
 
     except Exception as e:
@@ -66,21 +69,33 @@ def analyze(
         # First answer is used as the displayed response
         response_text = answers[0]
 
-        # Calculate semantic consistency
-        consistency = calculate_consistency(answers)
+        # Score through the brain: groundedness vs an optional trusted
+        # reference (dominant signal) fused with self-consistency stats.
+        result = score_responses(
+            question=request.prompt,
+            answers=answers,
+            reference=request.reference,
+            primary=response_text
+        )
 
-        # Convert consistency to risk
-        risk = 1 - consistency
-
-        # Calculate sentence-level scores
-        sentence_scores = calculate_sentence_scores(answers)
+        risk = float(result["risk_score"])
+        decision = str(result["decision"])
+        sentence_scores = [
+            {
+                "sentence": item["sentence"],
+                "score": float(item["risk"]),
+                "is_hallucinated": int(item["risk"] >= 0.5)
+            }
+            for item in result["sentence_risks"]
+        ]
 
         # Create main analysis
         analysis = Analysis(
             prompt=request.prompt,
             response=response_text,
             overall_score=risk,
-            model="groq/compound-mini"
+            decision=decision,
+            model=DEFAULT_MODEL
         )
 
         db.add(analysis)
@@ -88,7 +103,7 @@ def analyze(
         # Flush so analysis.id becomes available
         db.flush()
 
-        # Save all three Gemini responses
+        # Save all sampled responses
         for i, answer in enumerate(answers, start=1):
 
             llm_response = LLMResponse(
@@ -133,6 +148,7 @@ def analyze(
         "response": analysis.response,
         "overall_score": analysis.overall_score,
         "model": analysis.model,
+        "decision": analysis.decision,
         "sentence_scores": sentence_scores
     }
 
@@ -152,6 +168,7 @@ def get_history(
             "response": analysis.response,
             "overall_score": analysis.overall_score,
             "model": analysis.model,
+            "decision": analysis.decision,
             "created_at": analysis.created_at
         }
         for analysis in analyses
@@ -196,6 +213,7 @@ def get_analysis(
         "response": analysis.response,
         "overall_score": analysis.overall_score,
         "model": analysis.model,
+        "decision": analysis.decision,
         "created_at": analysis.created_at,
 
         "llm_responses": [

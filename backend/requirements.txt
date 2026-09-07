@@ -3,5 +3,5 @@ uvicorn
 sqlalchemy
 pydantic
 groq
-sentence-transformers
-scikit-learn
+numpy
+httpx

@@ -4,25 +4,37 @@ import time
 from groq import Groq
 
 
+# Single source of truth for the model used by the whole backend.
+# NOTE: "groq/compound-mini" currently errors with 413 (Request Entity Too
+# Large) on any content prompt, so the working chat model is the default.
+DEFAULT_MODEL = "qwen/qwen3.8-27b"
+
+
 client = Groq(
     api_key=os.getenv("GROQ_API_KEY")
 )
 
 
-def call_llm(prompt: str, max_retries: int = 3) -> str:
+def call_llm(
+    prompt: str,
+    temperature: float = 0.8,
+    model: str = DEFAULT_MODEL,
+    max_retries: int = 3,
+) -> str:
 
     for attempt in range(max_retries):
 
         try:
 
             response = client.chat.completions.create(
-                model="groq/compound-mini",
+                model=model,
                 messages=[
                     {
                         "role": "user",
                         "content": prompt
                     }
-                ]
+                ],
+                temperature=temperature
             )
 
             return response.choices[0].message.content
