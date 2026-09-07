@@ -34,7 +34,8 @@ def call_llm(
                         "content": prompt
                     }
                 ],
-                temperature=temperature
+                temperature=temperature,
+		        max_tokens =300
             )
 
             return response.choices[0].message.content
@@ -48,7 +49,7 @@ def call_llm(
             if attempt == max_retries - 1:
                 raise
 
-            wait_time = 2 * (attempt + 1)
+            wait_time = 2 * (2* attempt + 1)
 
             print(
                 f"LLM temporarily unavailable. "
